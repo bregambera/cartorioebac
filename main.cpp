@@ -125,9 +125,11 @@ int consulta()
             
             printf("### Cartório da EBAC ###\n\n"); // inicio do menu
             printf("escolha a opção desejada do menu: \n\n");
-            printf("\t1 - Registrar nomes \n");
-            printf("\t2 - Consultar nomes \n");
-            printf("\t3 - Deletar nomes \n"); // fim do menu
+            printf("\t1 - Registrar nomes \n\n");
+            printf("\t2 - Consultar nomes \n\n");
+            printf("\t3 - Deletar nomes \n\n");
+            printf("\t4 - Sair do sistema \n\n");
+            printf("Opção: "); // fim do menu
             
             scanf("%d", &opcao); // armazenando a escolha do usuário
             
@@ -141,12 +143,15 @@ int consulta()
                     
                 case 2:
                     consulta();// chamada da função
-
                     break;
                     
                 case 3:
                     deletar(); // chamada da função
-
+                    break;
+                    
+                case 4:
+                    printf("Obrigado por utilizar o sistema");
+                    return 0;
                     break;
                     
                 default:
