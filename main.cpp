@@ -110,11 +110,11 @@ int consulta()
         }
     }
     
-    int main() // Definindo Variáveis
+    int main()
     {
-        int opcao=0;
+        int opcao=0; // Definindo Variáveis
         int laco=1;
-        char senhadigitada[10]="a";
+        char senhadigitada[]="a";
         int comparacao;
         
         printf("##Cartório da EBAC ###\n\n");
@@ -122,9 +122,8 @@ int consulta()
         scanf("%s", senhadigitada);
         
         comparacao = strcmp(senhadigitada, "admin");
-        if (comparacao == 0)
         
-        if(senhadigitada[10] == "admin")
+        if (comparacao == 0)
         {
             system("cls");
             for(laco=1; laco=1;)
