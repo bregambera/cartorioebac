@@ -125,13 +125,11 @@ int consulta()
         
         if (comparacao == 0)
         {
-            system("cls");
+            system("cls"); // responsavel por limpar a tela
             for(laco=1; laco=1;)
             {
                 
-                system("cls"); // responsavel por limpar a pele
-                
-                setlocale(LC_ALL, "Portuguese"); // defilindo a linguagem
+                setlocale(LC_ALL, "Portuguese"); // definindo a linguagem
                 
                 
                 printf("### Cartório da EBAC ###\n\n"); // inicio do menu
@@ -144,7 +142,7 @@ int consulta()
                 
                 scanf("%d", &opcao); // armazenando a escolha do usuário
                 
-                system("cls");
+                system("cls"); // responsavel por limpar a tela
                 
                 switch (opcao) // inicio da selçáo do menu
                 {
@@ -172,5 +170,8 @@ int consulta()
                 } // fim da seleção
             }
         }
+        else
+            printf("Senha incorreta!");
     }
+
 
